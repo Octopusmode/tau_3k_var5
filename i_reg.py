@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 # Задание диапазона значений постоянной времени T
-T_values = np.linspace(0.1, 1, 100)
+T_values = np.linspace(0.1, 1, 20)
 
 # Задание диапазона входного сигнала
-input_signal = np.power(np.linspace(1, 10, 100), 2)  # Используем np.power для нелинейного нарастания
+input_signal = np.power(np.linspace(1, 10, 20), 2)  # Используем np.power для нелинейного нарастания
 
 # Создание сетки значений T и входного сигнала
 T_grid, input_signal_grid = np.meshgrid(T_values, input_signal)
